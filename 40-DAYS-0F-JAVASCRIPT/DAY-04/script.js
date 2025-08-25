@@ -1,4 +1,4 @@
-Write a simple calculator that takes an operator (+, -, , /, %) as input, and performs the operation on two numbers. Print the output on the console.
+//Write a simple calculator that takes an operator (+, -, , /, %) as input, and performs the operation on two numbers. Print the output on the console.
 let result;
 let operator = prompt("Which operator would you like to use?(Choose from 1-4)\n1.+\n2.-\n3./\n4.%");
 const a = 8;
