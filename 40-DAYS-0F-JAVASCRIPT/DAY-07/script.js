@@ -40,9 +40,11 @@ function numberGuessing(){
         userChoice()  
     }
     console.log(`You have figured the number!!\nIt is ${numbers}\nTotal trials ${userTrial}`)
-    // }
+
 }
 numberGuessing()
+
+
 
 
 
