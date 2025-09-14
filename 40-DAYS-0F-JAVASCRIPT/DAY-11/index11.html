@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./script11.js"></script>
+</head>
+<body>
+    <h1>Let's do this!!</h1>
+    <main>
+        <h2>Welcome to the page where we surf!!</h2>
+        <img src="https://images.pexels.com/photos/30374294/pexels-photo-30374294.jpeg" alt="Wanna surf??" width="300px" height="200">
+    </main>
+    <h2>...and eeaaattt</h2>
+    <table border="1">
+        <thead>
+
+            <tr>
+                <th > Fav Food</th>
+                <th >Fav Color</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td > Githeri </td>
+                <td > Sky blue</td>
+            </tr>
+            <tr>
+                <td> Nothiiiing</td>
+                <td>Black</td>
+            </tr>
+        </tbody>   
+    </table>
+    <form>
+        <p>What's your favorite beach?</p>
+        <input type="radio" id="Hawaii" name="Beach" val="Hawaii">
+        <label for="Hawaii">Hawaii</label>
+        <input type="radio" id="Maldives" name="Beach" val="Maldives">
+        <label for="Maldives">Maldives</label>
+        <input type="radio" id="Mombasa" name="Beach" val="Hawaii">
+        <label for="Hawaii">Mombasa</label><br><br>
+    </form>  
+    <div id="button1">
+    <script>
+        function createButton(){
+            //creates the button dynamically
+            const btn = document.createElement("button")
+            btn.id = "button2"
+            btn.textContent = "Send"
+
+            //add the button to the page
+            document.getElementById("button1").appendChild(btn)
+
+            //initialize the counter var
+            let counter = 0;
+            
+            //count the number of times it is clicked
+            btn.addEventListener("click", function(){
+                counter++;
+                console.log(`Button is clicked ${counter} times`)
+            })
+        }
+        //call the function
+        createButton()
+    </script>
+    </div>  
+</body>
+</html>
