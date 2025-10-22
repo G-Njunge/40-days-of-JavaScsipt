@@ -25,4 +25,4 @@ student1.push({
 
 });
 
-console.log(student1);
+console.log(student1[0].name);

@@ -40,23 +40,26 @@
         <label for="Maldives">Maldives</label>
         <input type="radio" id="Mombasa" name="Beach" val="Hawaii">
         <label for="Hawaii">Mombasa</label><br><br>
+        <button id="button2" type = "button">Send</button>
     </form>  
     <div id="button1">
     <script>
         function createButton(){
             //creates the button dynamically
-            const btn = document.createElement("button")
-            btn.id = "button2"
-            btn.textContent = "Send"
+            //const btn = document.createElement("button")
+            //btn.id = "button2"
+            //btn.textContent = "Send"
 
             //add the button to the page
-            document.getElementById("button1").appendChild(btn)
+            //document.getElementById("button1").appendChild(btn)
 
+            // create button manually
+            
             //initialize the counter var
             let counter = 0;
             
             //count the number of times it is clicked
-            btn.addEventListener("click", function(){
+            document.getElementById("button2").addEventListener("click", function(){
                 counter++;
                 console.log(`Button is clicked ${counter} times`)
             })
